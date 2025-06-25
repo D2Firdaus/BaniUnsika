@@ -1,0 +1,461 @@
+:root {
+    --primary-color: #004f49;
+    --secondary-color: #003b37;
+    --background-color: #fff;
+    --font-white: #fff;
+    --font-black: #000;
+    --accent-font: #ffd908;
+    --hover-background-color02: rgba(224, 224, 224, 0.2);
+    --hover-background-color1: rgba(224, 224, 224, 1);
+    --footer_background-color: #000;
+}
+
+/* ============ GLOBAL ============ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;
+    /* IE dan Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* ============ NAVBAR ============ */
+.navbar_wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+nav {
+    height: 59px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color);
+}
+
+nav>a {
+    width: max-content;
+    height: 100%;
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    transition: background-color 150ms ease-in-out;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+}
+
+nav>a:hover {
+    background-color: var(--hover-background-color1);
+}
+
+/* ============ SUBNAV ============ */
+.subnav_wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+.subnav {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    background-color: var(--secondary-color);
+    transition: background-color 150ms ease-in-out;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.subnav::-webkit-scrollbar {
+    display: none;
+}
+
+.subnav>a {
+    width: max-content;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--font-white);
+}
+
+.subnav>a:last-child {
+    margin-right: 40px;
+}
+
+.subnav>a:hover {
+    background-color: var(--hover-background-color02);
+}
+
+.scroll-left,
+.scroll-right {
+    height: 100%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 150ms ease-in-out;
+}
+
+.scroll-left {
+    left: 0;
+}
+
+.scroll-right {
+    right: 0;
+}
+
+.scroll-left:hover,
+.scroll-right:hover {
+    background-color: var(--hover-background-color1);
+}
+
+/* ============ SECTION TENTANG ============ */
+.wrapper_section_tentang {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 25px;
+    background-color: var(--primary-color);
+}
+
+.wrapper_section_tentang>img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#star-small,
+#star-big,
+#bg-section,
+#mosque-section,
+#cloud-left,
+#cloud-right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#star-small {
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#star-big {
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+}
+
+#bg-section {
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+}
+
+#mosque-section {
+    z-index: 4;
+    bottom: -10%;
+}
+
+#cloud-left {
+    z-index: 5;
+    bottom: -25%;
+}
+
+#cloud-right {
+    z-index: 5;
+    bottom: -30%;
+}
+
+.content_section_tentang {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    z-index: 4;
+    width: 50%;
+    color: var(--background-color);
+}
+
+.content_section_tentang>h {
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.75);
+}
+
+.content_section_tentang>p {
+    margin-top: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+.judul-tentang>span {
+    color: var(--accent-font);
+}
+
+/* ============ SECTION MATERI ============ */
+.wrapper_section_materi {
+    background-color: var(--background-color);
+}
+
+
+.section-materi a {
+    display: block;
+    width: 100%;
+    max-width: 549px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.section-materi {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 549px);
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--background-color);
+}
+
+.materi-card {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+
+    opacity: 0;
+    transform: translateY(40px);
+    /* geser sedikit ke bawah */
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.materi-card.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.materi-card.just-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.materi-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.materi-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    padding: 10px;
+    color: var(--font-white);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all 1s;
+}
+
+.materi-text:hover {
+    height: 50%;
+}
+
+.materi-text h3 {
+    display: block;
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px 0px;
+}
+
+.materi-text p {
+    opacity: 0;
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    white-space: normal;
+    /* default, biar bisa wrapping */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* untuk kata panjang */
+    transition: all 2s;
+}
+
+.materi-text:hover p {
+    opacity: 1;
+}
+
+/* .materi-text p,
+.materi-text h3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+.materi-button {
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.materi-button>button {
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--font-white);
+}
+
+.materi-button>button:hover {
+    background-color: #2d5c59;
+}
+
+/* ============ SECTION TIM ============
+.wrapper_section_tim {
+    width: 100%;
+    height: 818px;
+    background-color: var(--primary-color);
+}
+
+/* ============ SECTION FOOTER ============ */
+/* .wrapper_section_footer {
+    width: 100%;
+    height: 818px;
+    background-color: #000;
+} */
+
+
+
+
+
+
+
+
+
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1000px) {
+    nav {
+        height: 8vw;
+    }
+
+    nav>a {
+        height: 100%;
+        padding: 0 10px;
+        font-size: calc(3vw);
+    }
+
+    .nav>a>span {
+        font-size: calc(3vw);
+    }
+
+    .subnav {
+        height: 5vw;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        background-color: var(--secondary-color);
+        transition: background-color 150ms ease-in-out;
+    }
+
+    .subnav>a {
+        padding: 0 5px;
+        font-size: 2vw;
+    }
+
+    .wrapper_section_tentang {
+        height: 50vw;
+    }
+
+    .content_section_tentang {
+        width: 75%;
+    }
+
+    .content_section_tentang>p {
+        font-size: 3vw;
+    }
+
+    .content_section_tentang>h {
+        font-size: 5vw;
+    }
+
+    .section-materi {
+        padding: 20px 20px;
+        row-gap: 20px;
+        grid-template-columns: 2fr;
+    }
+
+    .materi-card {
+        width: min(100%, 500px);
+        height: 200px;
+    }
+
+    .materi-text {
+        border-radius: 0px;
+    }
+
+    .materi-text h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .materi-text p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+}

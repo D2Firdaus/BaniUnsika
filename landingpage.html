@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link rel -->
+    <!-- css/js -->
+    <link rel="stylesheet" href="css\landingpage.css">
+    <script src="js/index.js" defer></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Kufi+Arabic:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css\variables.css">
+
+    <title>BaniUNSIKA</title>
+
+</head>
+
+<body>
+
+    <div class="navbar_wrapper">
+        <nav class="nav monf24">
+            <a href=""><span class="material-icons">home</span></a>
+            <a href="" class="tentang">tentang</a>
+            <a href="" class="materi">materi</a>
+            <a href="" class="tim">tim</a>
+            <a href="" class="kontak">kontak</a>
+        </nav>
+
+        <div class="subnav_wrapper">
+            <button class="scroll-left" onclick="scrollLeft()">&#8249;</button>
+            <button class="scroll-right" onclick="scrollRight()">&#8250;</button>
+            <div class="subnav robf16" id="subnav">
+                <a href="" class="materi1">Peranan Agama Dalam Kehidupan</a>
+                <a href="" class="materi2">Makna Jihad dalam Islam</a>
+                <a href="" class="materi3">Sumber Ajaran Islam (Al-Quran)</a>
+                <a href="" class="materi4">Sumber Ajaran Islam (As-Sunnah / Al-Hadist)</a>
+                <a href="" class="materi5">Sumber Ajaran Islam (Al-Ijtihad)</a>
+                <a href="" class="materi6">Ruang Lingkup Ajaran Islam (Aqidah & Syariah)</a>
+                <a href="" class="materi7">Ruang Lingkup Ajaran Islam (Akhlak)</a>
+                <a href="" class="materi8">Manusia dan Agama</a>
+                <a href="" class="materi9">Hakikat Ibadah dan Urgensinya</a>
+                <a href="" class="materi10">Islam dan Kebudayaan</a>
+                <a href="" class="materi11">Islam, Ilmu Pengetahuan dan Teknologi</a>
+                <a href="" class="materi12">Islam, HAM dan Toleransi</a>
+                <a href="" class="materi13">Islam dan Demokrasi</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper_section_tentang">
+        <img src="assets\img\tentang\back.png" id="bg-section" alt="">
+        <img src="assets\img\tentang\star-big.png" id="star-big" alt="">
+        <img src="assets\img\tentang\star-small.png" id="star-small" alt="">
+        <img src="assets/img/tentang/mosque-tentang.png" id="mosque-section" alt="">
+        <img src="assets\img\tentang\cloud-left.png" id="cloud-left" alt="">
+        <img src="assets\img\tentang\cloud-right.png" id="cloud-right" alt="">
+
+        <div class="content_section_tentang" id="content_section_tentang">
+            <h class="judul-tentang monf64">Bani <span>UNSIKA</span></h>
+            <p class="isi-tentang robf32">Temukan bagaimana umat Muslim menjalani kehidupan sehari-hari berdasarkan
+                nilai-nilai keimanan, etika, dan budaya. Website ini menyajikan konten edukatif yang memperkaya
+                pemahaman Anda tentang Islam secara praktis dan inspiratif.</p>
+        </div>
+    </div>
+
+    <div class="wrapper_section_materi">
+
+        <div class="section-materi collapsed" id="materiGrid">
+
+            <a href="materi\materi1.html">
+                <div class="materi-card">
+                    <img src="/assets/img/materi/materi1.png" alt="Peranan Agama">
+                    <div class="materi-text">
+                        <h3>Peranan Agama Dalam Kehidupan</h3>
+                        <p>Agama berperan membentuk moral, etika, dan pedoman hidup manusia dalam masyarakat.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="materi\materi2.html">
+                <div class="materi-card">
+                    <img src="/assets/img/materi/materi2.png" alt="Makna Jihad">
+                    <div class="materi-text">
+                        <h3>Makna Jihad dalam Islam</h3>
+                        <p>Jihad adalah usaha sungguh-sungguh dalam membela kebenaran dan memperbaiki diri.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="materi\materi3.html">
+            <div class="materi-card">
+                <img src="/assets/img/materi/materi3.png" alt="Al-Quran">
+                <div class="materi-text">
+                    <h3>Sumber Ajaran Islam (Al-Quran)</h3>
+                    <p>Al-Quran adalah kitab suci umat Islam yang menjadi sumber utama hukum dan ajaran Islam.</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="materi\materi4.html">
+                <div class="materi-card">
+                    <img src="/assets/img/materi/materi4.png" alt="Hadist">
+                    <div class="materi-text">
+                        <h3>Sumber Ajaran Islam (As-Sunnah / Al-Hadist)</h3>
+                        <p>Sunnah adalah perkataan, perbuatan, dan ketetapan Nabi Muhammad SAW sebagai pedoman hidup.
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="materi\materi5.html">
+            <div class="materi-card">
+                <img src="/assets/img/materi/materi5.png" alt="Ijtihad">
+                <div class="materi-text">
+                    <h3>Sumber Ajaran Islam (Al-Ijtihad)</h3>
+                    <p>Ijtihad adalah usaha para ulama dalam menetapkan hukum Islam terhadap permasalahan baru.</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="materi\materi6.html">
+                <div class="materi-card">
+                    <img src="/assets/img/materi/materi6.png" alt="Aqidah & Syariah">
+                    <div class="materi-text">
+                        <h3>Ruang Lingkup Ajaran Islam (Aqidah & Syariah)</h3>
+                        <p>Aqidah adalah keyakinan, sedangkan Syariah adalah aturan yang mengatur kehidupan umat Islam.
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="materi\materi7.html">
+            <div class="materi-card">
+                <img src="/assets/img/materi/materi7.png" alt="Akhlak">
+                <div class="materi-text">
+                    <h3>Ruang Lingkup Ajaran Islam (Akhlak)</h3>
+                    <p>Akhlak adalah perilaku dan karakter mulia yang harus dimiliki setiap muslim.</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="materi\materi8.html">
+                <div class="materi-card">
+                    <img src="/assets/img/materi/materi8.png" alt="Manusia dan Agama">
+                    <div class="materi-text">
+                        <h3>Manusia dan Agama</h3>
+                        <p>Agama memberikan makna dan tujuan hidup serta membimbing manusia dalam bertindak.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="materi\materi9.html">
+            <div class="materi-card">
+                <img src="/assets/img/materi/materi9.png" alt="Ibadah">
+                <div class="materi-text">
+                    <h3>Hakikat Ibadah dan Urgensinya</h3>
+                    <p>Ibadah adalah bentuk penghambaan kepada Allah yang memperkuat hubungan spiritual manusia.</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="materi\materi10.html">
+                <div class="materi-card">
+                    <img src="/assets/img/materi/materi10.png" alt="Kebudayaan">
+                    <div class="materi-text">
+                        <h3>Islam dan Kebudayaan</h3>
+                        <p>Islam mendorong kebudayaan yang sesuai dengan nilai-nilai Islam tanpa menghilangkan identitas
+                            lokal.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="materi\materi11.html">
+            <div class="materi-card">
+                <img src="/assets/img/materi/materi11.png" alt="IPTEK">
+                <div class="materi-text">
+                    <h3>Islam, Ilmu Pengetahuan dan Teknologi</h3>
+                    <p>Islam mendorong umatnya untuk mencari ilmu dan memajukan teknologi demi kemaslahatan umat.</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="materi\materi12.html">
+                <div class="materi-card">
+                    <img src="/assets/img/materi/materi12.png" alt="HAM dan Toleransi">
+                    <div class="materi-text">
+                        <h3>Islam, HAM dan Toleransi</h3>
+                        <p>Islam menjunjung tinggi hak asasi manusia dan mendorong toleransi antar umat beragama.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="materi\materi13.html">
+                <div class="materi-card">
+                    <img src="/assets/img/materi/materi13.png" alt="Demokrasi">
+                    <div class="materi-text">
+                        <h3>Islam dan Demokrasi</h3>
+                        <p>Prinsip-prinsip demokrasi seperti keadilan dan musyawarah selaras dengan ajaran Islam.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="materi-button">
+            <button id="toggleMateri">Lihat Semua Materi</button>
+        </div>
+    </div>
+
+
+    <div class="wrapper_section_tim">
+
+    </div>
+
+    <div class="wrapper_section_footer">
+
+    </div>
+
+</body>
+
+</html>

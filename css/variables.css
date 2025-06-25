@@ -1,0 +1,69 @@
+
+
+/* ! Noto Kufi Arabic */
+.notf {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+/* ! Roboto */
+.robf32 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 32px;
+}
+.robf24 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 24px;
+}
+
+.robf16 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+/* ! Montserrat */
+.monf24 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.monf64 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 64px;
+}
+
+/* ! Staatliches */
+.staf24 {
+    font-family: "Staatliches", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size: 24px;
+}
+
+/* ! Icon */
+.material-icons {
+    font-size: 32px;
+}
